@@ -1,5 +1,5 @@
 # switch to a nicer syntax
-.syntax unified
+# .syntax unified
  
 # declare main as exportable (public)
 .global main
