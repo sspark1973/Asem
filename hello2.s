@@ -1,22 +1,12 @@
-.data
-
-msg:
-.ascii "Hello, ARM World!\n"
-len = . - msg
-
-
-.text
-
-.globl _start
+.global _start
 _start:
-/* write syscall */
-mov r0 #1 
-ldr r1 =msg 
-ldr r2 =len 
-mov r7 #4 
-swi $0 
-
-/* exit syscall */
-mov r0 #0 
-mov r7 #1 
-swi $0
+  MOV R7, #4
+  MOV R0, #1
+  MOV R2, #12
+  LDR R1, =string
+  SWI 0
+  MOV R7, #1
+  SWI 0
+  .data
+string:
+  .ascii "Hello World\n"
