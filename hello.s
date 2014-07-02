@@ -1,5 +1,3 @@
-ARM
-
 AREA ||.text||, CODE, READONLY, ALIGN=2;
 
 hello PROC
