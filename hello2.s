@@ -5,6 +5,10 @@
 
             ENTRY
 
+            IMPORT    printhex
+            IMPORT    putchar
+            IMPORT    putstring
+            
             ; Print "Hello world"
 
             ; Get the offset to the string in r4.
